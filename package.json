@@ -1,0 +1,29 @@
+{
+  "name": "hirelens",
+  "version": "1.0.0",
+  "description": "HR screening agents: evidence-linked scoring, blind screening with a bias check, and interview kits. Free stack: Groq + local embeddings.",
+  "type": "module",
+  "private": true,
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node tests/run.mjs"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "mammoth": "^1.8.0",
+    "multer": "^2.0.0",
+    "nodemailer": "^6.9.16",
+    "pdf-parse": "1.1.1"
+  },
+  "optionalDependencies": {
+    "@huggingface/transformers": "^3.3.3",
+    "@langchain/core": "^0.3.40",
+    "@langchain/langgraph": "^0.2.74"
+  }
+}
